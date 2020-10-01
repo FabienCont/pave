@@ -1,0 +1,30 @@
+html,body{
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+}
+
+.pave-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pave-gif{
+    width: 100vw;
+    height: 200vw;
+    background-image: url('./pavegrandangle.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+@media only screen and (min-width: 640px) {
+  .pave-gif{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./pavemobile.gif');
+  }
+}
